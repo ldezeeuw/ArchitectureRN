@@ -3,14 +3,14 @@
 
 Ce dossier contient tous les utilitaires, ce dossier sera exporté dans le package @uptoo/react-mobile
 
-| améliorations | Importance/10 |
-|--|--|
-| Enlever les modules inutilisés | 6 |
-| Faire une section dev/debug | 4 |
-| Faire une section style | 4 |
-| Faire une section helpers | 4 |
-| Ajouter Reactotron a la section dev/debug | 4 |
-| Pour le module style faire une meilleur utilisation des variables pour pouvoir paramétrer le thème l'application ou simplement changer les couleurs (primary\|secondary\|...) | 8 |
+| améliorations |
+|--|
+| Enlever les modules inutilisés |
+| Faire une section dev/debug |
+| Faire une section style |
+| Faire une section helpers |
+| Ajouter Reactotron a la section dev/debug |
+| Pour le module style faire une meilleur utilisation des variables pour pouvoir paramétrer le thème l'application ou simplement changer les couleurs (primary\|secondary\|...) |
 
 ### Tree
 
