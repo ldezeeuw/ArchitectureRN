@@ -1,4 +1,3 @@
-
 ## Utils
 
 Ce dossier contient tous les utilitaires, ce dossier sera exporté dans le package @uptoo/react-mobile
@@ -6,6 +5,7 @@ Ce dossier contient tous les utilitaires, ce dossier sera exporté dans le packa
 | améliorations |
 |--|
 | Enlever les modules inutilisés |
+| Faire s'adapter la taille des fonts en fonction de la taille de l'écran |
 | Faire une section dev/debug |
 | Faire une section style |
 | Faire une section helpers |

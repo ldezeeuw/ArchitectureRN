@@ -12,7 +12,7 @@
 |--|
 | Paramétrer les variables en fonctions d'une variable d'environnement |
 ---
-- ### Dossier Store
+- ### Store
 *fichiers :*
   - configureStore.js
   - configureStore.dev.js
@@ -25,8 +25,8 @@
 
 Le modèle de conception des routes est bon il faudrais le garder mais plus le compartimenter pour aérer les fichiers de configuration des routes :
 
-| améliorations | Importance/10 |
-|--|--|
+| améliorations |
+|--|
 | Faire un **Composant route** qui rend possible le paramétrage des **hooks** par props : <br/>`<Route deviceOrientation={true} SafeViewAera={true} {...} />` |
 |<br/> Faire un **Composant** pour wrapper la **structure** de route **initial** (routes logged-in et route accessible a tous) <br/> `<SceneStructure initialScenes={logged-in\|accessible} loggedScenes={...} accessibleScenes={...} />`|
 | <br/>Faire un HOC/fonction qui prend en paramètre l'accès premier a l'application ex :<br/>`scenes(this.isLogged)`<br/>cette fonction servira à initialiser le composant de structure des routes  |

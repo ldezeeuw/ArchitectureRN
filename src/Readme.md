@@ -1,4 +1,5 @@
 
+
 ## Src
 
 ### Containers
@@ -15,7 +16,7 @@
 - Une méthode render de max 80 ligne
 
 ### Components
-> Un composant ne contiens pas nécessairement de logique mais qui a un but unique et précis
+> Un composant ne contiens pas nécessairement de logique mais a un but unique et précis
 
 Si je suis sur une page de détail je peux voir plusieurs éléments distincts
 
@@ -29,14 +30,14 @@ Si je suis sur une page de détail je peux voir plusieurs éléments distincts
 
 Ce qui ce traduit par :
 
-Container class
+**Component container**
 
     render = () => ({
         <Post />            // Wrapper pour (<Header/>|<Content/>|<Footer/>)
         <Commentaires />    // Liste
     })
 
-Post class
+**Post**
 
     render = () => ({
         <View>
@@ -45,8 +46,27 @@ Post class
             <Footer onLike={this.onLike} /> // Composant qui wrap un composant de like
         </View>
     })
-Comments class
+**Comments**
 
     render = () => ({
         <List renderItem={comment => <Comment comment={item}>} />
     })
+
+### Composition d'un composant
+> Déterminer quels composants on leur skeleton attribué
+
+    ── componentName
+       ├── index.js         // Main file
+       ├── skeletton.js     // Skeleton loader
+       └── style.js         // Style du component
+
+### Composition d'un container
+    ├── componentName   // Composant lié a la feature qui n'est
+    │   ├── index.js    //  utilisé qu'a l'interieur de ce container
+    │   └── style.js
+    ├── helpers         // Helpers du container destiné a réduire la taille du fichier
+    │   ├── a.js
+    │   ├── b.js
+    │   └── index.js
+    ├── index.js        // Fichier principal
+    └── style.js
