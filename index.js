@@ -1,0 +1,1 @@
+import lint from './src/containers/lint'
